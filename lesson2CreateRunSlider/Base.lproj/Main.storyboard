@@ -23,13 +23,39 @@
                                     <constraint firstAttribute="height" constant="149" id="UHs-Tq-ktR"/>
                                 </constraints>
                             </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="pfz-zW-Ayj">
+                                <rect key="frame" x="16" y="212" width="343" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jT-hi-u6R">
+                                        <rect key="frame" x="0.0" y="0.0" width="26" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0DN-uq-ePX">
+                                        <rect key="frame" x="51" y="0.0" width="35.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hGv-XN-ZXZ">
+                                        <rect key="frame" x="109.5" y="0.0" width="235.5" height="31"/>
+                                    </slider>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XVR-5E-DYu"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.45380719069999997" green="0.65990805050000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pfz-zW-Ayj" secondAttribute="trailing" constant="16" id="Fdk-c1-0Ao"/>
                             <constraint firstItem="ZPJ-3q-iK6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="csw-bd-JVA"/>
+                            <constraint firstItem="pfz-zW-Ayj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="eOp-cE-HVY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZPJ-3q-iK6" secondAttribute="trailing" constant="16" id="hOb-av-vpW"/>
                             <constraint firstItem="ZPJ-3q-iK6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ifl-fx-EGl"/>
+                            <constraint firstItem="pfz-zW-Ayj" firstAttribute="top" secondItem="ZPJ-3q-iK6" secondAttribute="bottom" constant="43" id="sZP-eM-UEk"/>
                         </constraints>
                     </view>
                 </viewController>
