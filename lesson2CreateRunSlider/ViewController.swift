@@ -9,11 +9,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var presentView: UIView!
+    
+    @IBOutlet var redView: UILabel!
+    @IBOutlet var redScroll: UILabel!
+    @IBOutlet var redSlider: UISlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        redScroll.text = ""
+        presentView.tintColor
+        
     }
 
 
 }
+
+
 

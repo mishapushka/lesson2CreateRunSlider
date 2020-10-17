@@ -103,6 +103,13 @@
                             <constraint firstItem="RgO-5C-8lI" firstAttribute="top" secondItem="ZPJ-3q-iK6" secondAttribute="bottom" constant="119" id="vTL-2i-6uA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="presentView" destination="ZPJ-3q-iK6" id="7Um-Jv-daz"/>
+                        <outlet property="redScroll" destination="0DN-uq-ePX" id="kQf-GR-3u2"/>
+                        <outlet property="redSlider" destination="hGv-XN-ZXZ" id="UIk-4l-H4G"/>
+                        <outlet property="redView" destination="2jT-hi-u6R" id="aD8-gf-7A5"/>
+                        <outlet property="view" destination="ZPJ-3q-iK6" id="HT8-j4-gD1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
