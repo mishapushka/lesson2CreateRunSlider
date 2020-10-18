@@ -63,6 +63,9 @@
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4On-g4-Hp7">
                                         <rect key="frame" x="243.5" y="0.0" width="101.5" height="31"/>
+                                        <connections>
+                                            <action selector="greenSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="sNd-QW-SNn"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                             </stackView>
@@ -83,6 +86,9 @@
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RgO-5C-8lI">
                                         <rect key="frame" x="243.5" y="0.0" width="101.5" height="31"/>
+                                        <connections>
+                                            <action selector="blueSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="OuH-DV-IHX"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                             </stackView>
@@ -107,6 +113,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="blueScroll" destination="lpp-a4-utb" id="p1P-4a-aKf"/>
+                        <outlet property="blueSlider" destination="RgO-5C-8lI" id="cfk-8y-QGA"/>
+                        <outlet property="greenScroll" destination="Wk5-i3-RCm" id="gz1-nw-W4f"/>
+                        <outlet property="greenSlider" destination="4On-g4-Hp7" id="sfa-kU-MUf"/>
                         <outlet property="presentView" destination="ZPJ-3q-iK6" id="7Um-Jv-daz"/>
                         <outlet property="redScroll" destination="0DN-uq-ePX" id="kQf-GR-3u2"/>
                         <outlet property="redSlider" destination="hGv-XN-ZXZ" id="UIk-4l-H4G"/>
