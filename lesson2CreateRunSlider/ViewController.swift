@@ -19,11 +19,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         redScroll.text = ""
-        presentView.tintColor
+        
         
     }
 
-
+    @IBAction func redSliderAction() {
+    }
+    
 }
 
 
