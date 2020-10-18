@@ -18,12 +18,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        redScroll.text = ""
+        redSlider.value = 0
+        redSlider.minimumValue = 0
+        redSlider.maximumValue = 1
+
         
-        
+        redScroll.text = String(redSlider.value)
     }
 
     @IBAction func redSliderAction() {
+        let currentValue = CGFloat(redSlider.value)
+        redScroll.text = String(redSlider.value)
+        presentView.backgroundColor = presentView.backgroundColor?.withAlphaComponent(currentValue)
+        
     }
     
 }
